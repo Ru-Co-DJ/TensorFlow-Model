@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+  </head>
+
+  <body style="margin: 8px">
+    <div>
+      <div style="width: 35%; 
+      margin: auto;" >
+      <h6>Create a New Model</h6>
+        <input
+          type="text"
+          id="ModelName"
+          name="modelName"
+          placeholder="Model Name ..."
+        />
+        <button id="btnName" class="btn btn-outline-success">Ok</button>
+      </div>
+
+
+      <!-- <div  style="width: 35%;
+      margin: auto;">
+        <h6>load an existing Model</h6>
+        <button id="load" class="btn btn-outline-success">Load</button>
+      </div> -->
+
+
+
+      <div id="Hinfo"></div>
+      <div class="all" style=" width:100%;
+      display:flex;
+      justify-content: space-between;
+      align-items: space-between;">
+        <div id="listCols" class="form-check in"></div>
+        <div id="output" class="out" style="margin-left: 300px;"></div>
+        <div id="newData"></div>
+        <div id="predictionResult" style="width: 30%;"></div>
+      </div>
+    </div>
+    <script src="./model.js" type="module"></script>
+    <script src="./BE.js" type="module"></script>
+  </body>
+</html>

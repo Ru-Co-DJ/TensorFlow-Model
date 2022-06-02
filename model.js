@@ -152,7 +152,7 @@ const trainClassification = async (choice) => {
 
   await model
     .fit(features, labels, {
-      epochs: 10,
+      epochs: 30,
       batchSize: Math.floor(DATA.length / 12),
       shuffle: true,
       callbacks: fitCallbacks
